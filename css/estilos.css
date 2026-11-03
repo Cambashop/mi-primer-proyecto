@@ -1,13 +1,75 @@
- body {
-    background-color: lightblue;
+  
+/* DISEÑO GENERAL */
+body {
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #93c5fd
+    );
+
     font-family: Arial, sans-serif;
+    color: #1e293b;
 }
 
+/* TITULO PRINCIPAL */
 h1 {
-    color: blue;
+    color: #1d4ed8;
     text-align: center;
+    font-size: 42px;
+    margin-bottom: 25px;
 }
 
+/* SUBTITULOS */
+h2 {
+    color: #1e40af;
+    font-size: 28px;
+    margin-top: 45px;
+}
+
+/* PARRAFOS */
 p {
-    font-size: 18px;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+/* BOTON */
+button {
+    background: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* EFECTO DEL BOTON */
+button:hover {
+    background: #1e40af;
+    transform: scale(1.05);
+}
+
+/* ADAPTACION A CELULARES */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 17px;
+    }
 }
