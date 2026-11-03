@@ -1,1 +1,3 @@
-alert("¡Hola! Bienvenido a mi página web.");
+ function saludar() {
+    alert("¡Hola! Gracias por visitar mi página.");
+}
